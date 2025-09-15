@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Petting Barn - Sunny Acres Farm</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        /* Header */
+        
+        .farm-header {
+            background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .farm-logo {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        /* Navigation */
+        
+        .farm-nav {
+            background-color: #2c5530;
+            padding: 0;
+        }
+        
+        .farm-nav .nav-link {
+            color: #fff;
+            font-weight: 500;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .farm-nav .nav-link:hover {
+            background-color: #4a7c59;
+            color: #fff;
+        }
+        
+        .farm-nav .nav-link.active {
+            background-color: #4a7c59;
+            color: #fff;
+        }
+        /* Main Content */
+        
+        .main-content {
+            padding: 30px;
+        }
+        
+        .headingW {
+            font-size: 2.5rem;
+            color: #2c5530;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .promo-photo {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            display: block;
+        }
+        
+        .content-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .heading {
+            font-size: 1.5rem;
+            color: #2c5530;
+            font-weight: bold;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4a7c59;
+        }
+        
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .info-list li {
+            background-color: #f8f9fa;
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-left: 4px solid #4a7c59;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .info-list li:before {
+            content: "🐄";
+            margin-right: 10px;
+        }
+        /* Footer */
+        
+        .farm-footer {
+            background-color: #2c5530;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            .headingW {
+                font-size: 2rem;
+            }
+            .main-content {
+                padding: 20px;
+            }
+            .farm-nav .nav-link {
+                padding: 12px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Header -->
+        <header class="farm-header">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <img src="../image/Tuan2/salogo.jpg" alt="Sunny Acres Farm Logo" class="farm-logo">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="farm-nav">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <a href="Bai3_home.html" class="nav-link">
+                            <i class="bi bi-house me-2"></i>Home
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="Bai3_maze.html" class="nav-link">
+                            <i class="bi bi-tree me-2"></i>The Corn Maze
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="Bai3_haunt.html" class="nav-link">
+                            <i class="bi bi-moon-stars me-2"></i>The Haunted Maze
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="Bai3_petting.html" class="nav-link active">
+                            <i class="bi bi-heart me-2"></i>Petting Barn
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="Bai3_producoe.html" class="nav-link">
+                            <i class="bi bi-apple me-2"></i>Produce
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <section class="main-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="headingW">
+                            <i class="bi bi-heart me-3"></i>The Petting Barn
+                        </div>
+
+                        <img src="../image/Tuan2/photo4.jpg" alt="Promotional Photo" class="promo-photo">
+
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <p class="content-text">
+                                    The Sunny Acres Petting Barn, conveniently located northeast of Council Bluffs, is a perfect setting for people of all ages to learn about farming and farm animals. At our farm you can enjoy over 100 friendly farm animals in a clean, relaxed, hands-on
+                                    environment. The kids can bottle feed the baby goats, lambs, and calves in the Nursery and Bottle Baby pens. Come join us for a fun-filled day.
+                                </p>
+
+                                <p class="content-text">
+                                    Teachers: our Petting Barn is an educational experience. Stroll around our 15 acres of open pasture and see animals in their natural habitat. Special events can be arranged for school field trips and classroom activities. Pony rides are available Saturdays
+                                    and Sundays from April through October (weather permitting). Maximum rider weight limit of 75 pounds, please.
+                                </p>
+
+                                <p class="content-text">
+                                    Bring a picnic lunch and stay the day or just enjoy a peaceful hour. Perfect for school or church groups, day-care centers, family outings, company picnics and especially birthday parties. Please come and enjoy our wonderful country atmosphere and relax!
+                                    We invite you to come out and visit us often. There are always new and exciting events happening at Sunny Acres ... and that's just the way we like it!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="heading">
+                                            <i class="bi bi-clock me-2"></i>Hours
+                                        </div>
+                                        <ul class="info-list">
+                                            <li>Monday - Friday: 9 am - 4 pm</li>
+                                            <li>Saturday - Sunday: 11am - 3 pm</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <div class="heading">
+                                            <i class="bi bi-currency-dollar me-2"></i>Admission
+                                        </div>
+                                        <ul class="info-list">
+                                            <li>Adult: $4.00</li>
+                                            <li>Ages 2 - 12: $2.50</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Feature Cards -->
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="bi bi-people-fill text-success" style="font-size: 2rem;"></i>
+                                        <h5 class="card-title mt-2">Educational Fun</h5>
+                                        <p class="card-text">Perfect for school field trips and classroom activities</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="bi bi-heart text-danger" style="font-size: 2rem;"></i>
+                                        <h5 class="card-title mt-2">100+ Animals</h5>
+                                        <p class="card-text">Over 100 friendly farm animals in a clean environment</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="bi bi-cup-hot text-warning" style="font-size: 2rem;"></i>
+                                        <h5 class="card-title mt-2">Bottle Feeding</h5>
+                                        <p class="card-text">Kids can bottle feed baby goats, lambs, and calves</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Info Cards -->
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="bi bi-calendar-event text-info" style="font-size: 2rem;"></i>
+                                        <h5 class="card-title mt-2">Special Events</h5>
+                                        <p class="card-text">Perfect for birthday parties, company picnics, and group outings</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="bi bi-tree text-success" style="font-size: 2rem;"></i>
+                                        <h5 class="card-title mt-2">15 Acres</h5>
+                                        <p class="card-text">Stroll around 15 acres of open pasture and see animals in their natural habitat</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="farm-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="mb-0">
+                            <i class="bi bi-geo-alt me-2"></i> Sunny Acres ✧ Tammy & Brent Nielsen ✧ 1977 Highway G ✧ Council Bluffs, IA 51503
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
